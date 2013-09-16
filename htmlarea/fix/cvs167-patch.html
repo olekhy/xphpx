@@ -1,0 +1,242 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+	<title>htmlArea CVS 1.67 to personal version</title>
+</head>
+
+<body>
+<table width="100%" border="1" bordercolor="#cccccc" cellspacing="0">
+<tr style="font:10px verdana;">
+    <td colspan="2" align="center" style="background-color:#000000; color:white;font-weight:bold;">Wordclean for mozilla (part 1)</td>
+</tr>
+<tr style="font:10px verdana;">
+    <td width="50%" align="center" style="background-color:#000000; color:white;font-weight:bold;">1.67</td>
+    <td width="50%" align="center" style="background-color:#000000; color:white;font-weight:bold;">Personal version</td>
+</tr>
+<tr style="font:10px verdana;">
+    <td>HTMLArea.prototype._wordClean = function() {</td>
+    <td>HTMLArea.prototype._wordClean = function() {</td>
+</tr>
+<tr style="font:10px verdana;">
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;var D = this.getInnerHTML();</td>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;var D = this.getInnerHTML();</td>
+</tr>
+<tr style="font:10px verdana;">
+    <td bgcolor="#ffff77">&nbsp;&nbsp;&nbsp;&nbsp;if (D.indexOf('class=Mso') >= 0) {</td>
+    <td bgcolor="#ffff77">&nbsp;&nbsp;&nbsp;&nbsp;//if (D.indexOf('class=Mso') >= 0) {</td>
+</tr>
+</table>
+<br>
+
+<table width="100%" border="1" bordercolor="#cccccc" cellspacing="0">
+<tr style="font:10px verdana;">
+    <td colspan="2" align="center" style="background-color:#000000; color:white;font-weight:bold;">Wordclean for mozilla (part 2)</td>
+</tr>
+<tr style="font:10px verdana;">
+    <td width="50%" align="center" style="background-color:#000000; color:white;font-weight:bold;">1.67</td>
+    <td width="50%" align="center" style="background-color:#000000; color:white;font-weight:bold;">Personal version</td>
+</tr>
+<tr style="font:10px verdana;">
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.setHTML(D);</td>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.setHTML(D);</td>
+</tr>
+<tr style="font:10px verdana;">
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.updateToolbar();</td>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.updateToolbar();</td>
+</tr>
+<tr style="font:10px verdana;">
+    <td bgcolor="#ffff77">&nbsp;&nbsp;&nbsp;&nbsp;}</td>
+    <td bgcolor="#ffff77">&nbsp;&nbsp;&nbsp;&nbsp;//}</td>
+</tr>
+<tr style="font:10px verdana;">
+    <td>};</td>
+    <td>};</td>
+</tr>
+</table>
+<br>
+
+<table width="100%" border="1" bordercolor="#cccccc" cellspacing="0">
+<tr style="font:10px verdana;">
+    <td colspan="2" align="center" style="background-color:#000000; color:white;font-weight:bold;">Wordclean for mozilla (part 3)</td>
+</tr>
+<tr style="font:10px verdana;">
+    <td width="50%" align="center" style="background-color:#000000; color:white;font-weight:bold;">1.67</td>
+    <td width="50%" align="center" style="background-color:#000000; color:white;font-weight:bold;">Personal version</td>
+</tr>
+<tr style="font:10px verdana;">
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case "paste":</td>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case "paste":</td>
+</tr>
+<tr style="font:10px verdana;">
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;try {</td>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;try {</td>
+</tr>
+<tr style="font:10px verdana;">
+    <td bgcolor="#ffaaaa">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (this.config.killWordOnPaste)</td>
+    <td bgcolor="#cccccc">&nbsp;</td>
+</tr>
+<tr style="font:10px verdana;">
+    <td bgcolor="#ffaaaa">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this._wordClean();</td>
+    <td bgcolor="#cccccc">&nbsp;</td>
+</tr>
+<tr style="font:10px verdana;">
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this._doc.execCommand(cmdID, UI, param);</td>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this._doc.execCommand(cmdID, UI, param);</td>
+</tr>
+<tr style="font:10px verdana;">
+    <td bgcolor="#cccccc">&nbsp;</td>
+    <td bgcolor="#aaffaa">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (this.config.killWordOnPaste)</td>
+</tr>
+<tr style="font:10px verdana;">
+    <td bgcolor="#cccccc">&nbsp;</td>
+    <td bgcolor="#aaffaa">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this._wordClean();</td>
+</tr>
+<tr style="font:10px verdana;">
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} catch (e) {</td>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} catch (e) {</td>
+</tr>
+</table>
+<br>
+
+<table width="100%" border="1" bordercolor="#cccccc" cellspacing="0">
+<tr style="font:10px verdana;">
+    <td colspan="2" align="center" style="background-color:#000000; color:white;font-weight:bold;">Previous onsubmit event on form are forgot</td>
+</tr>
+<tr style="font:10px verdana;">
+    <td width="50%" align="center" style="background-color:#000000; color:white;font-weight:bold;">1.67</td>
+    <td width="50%" align="center" style="background-color:#000000; color:white;font-weight:bold;">Personal version</td>
+</tr>
+<tr style="font:10px verdana;">
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;f.onsubmit = function() {</td>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;f.onsubmit = function() {</td>
+</tr>
+<tr style="font:10px verdana;">
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;editor._textArea.value = editor.getHTML();</td>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;editor._textArea.value = editor.getHTML();</td>
+</tr>
+<tr style="font:10px verdana;">
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var a = this.__msh_prevOnSubmit;</td>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var a = this.__msh_prevOnSubmit;</td>
+</tr>
+<tr style="font:10px verdana;">
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// call previous submit methods if they were there.</td>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// call previous submit methods if they were there.</td>
+</tr>
+<tr style="font:10px verdana;">
+    <td bgcolor="#cccccc">&nbsp;</td>
+    <td bgcolor="#aaffaa">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var previous_return = true;</td>
+</tr>
+<tr style="font:10px verdana;">
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (typeof a != "undefined") {</td>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (typeof a != "undefined") {</td>
+</tr>
+<tr style="font:10px verdana;">
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for (var i in a) {</td>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for (var i in a) {</td>
+</tr>
+<tr style="font:10px verdana;">
+    <td bgcolor="#ffff77">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a[i]();</td>
+    <td bgcolor="#ffff77">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;previous_return = previous_return && a[i]();</td>
+</tr>
+<tr style="font:10px verdana;">
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</td>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</td>
+</tr>
+<tr style="font:10px verdana;">
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</td>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</td>
+</tr>
+<tr style="font:10px verdana;">
+    <td bgcolor="#cccccc">&nbsp;</td>
+    <td bgcolor="#aaffaa">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return previous_return;</td>
+</tr>
+<tr style="font:10px verdana;">
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;};</td>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;};</td>
+</tr>
+<tr style="font:10px verdana;">
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;}</td>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;}</td>
+</tr>
+</table>
+<br>
+
+<table width="100%" border="1" bordercolor="#cccccc" cellspacing="0">
+<tr style="font:10px verdana;">
+    <td colspan="2" align="center" style="background-color:#000000; color:white;font-weight:bold;">Only 1 editor saved when multiple instances on same page</td>
+</tr>
+<tr style="font:10px verdana;">
+    <td width="50%" align="center" style="background-color:#000000; color:white;font-weight:bold;">1.67</td>
+    <td width="50%" align="center" style="background-color:#000000; color:white;font-weight:bold;">Personal version</td>
+</tr>
+<tr style="font:10px verdana;">
+    <td>if (HTMLArea.is_ie) {</td>
+    <td>if (HTMLArea.is_ie) {</td>
+</tr>
+<tr style="font:10px verdana;">
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;// enable editable mode for IE.	 For some reason this</td>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;// enable editable mode for IE.	 For some reason this</td>
+</tr>
+<tr style="font:10px verdana;">
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;// doesn't work if done in the same place as for Gecko</td>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;// doesn't work if done in the same place as for Gecko</td>
+</tr>
+<tr style="font:10px verdana;">
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;// (above).</td>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;// (above).</td>
+</tr>
+<tr style="font:10px verdana;">
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;doc.body.contentEditable = true;</td>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;doc.body.contentEditable = true;</td>
+</tr>
+<tr style="font:10px verdana;">
+    <td bgcolor="#cccccc">&nbsp;</td>
+    <td bgcolor="#aaffaa">&nbsp;&nbsp;&nbsp;&nbsp;editor._iframe.attachEvent("onblur",function(){ editor._textArea.value=editor.getHTML(); },true);</td>
+</tr>
+<tr style="font:10px verdana;">
+    <td bgcolor="#cccccc">&nbsp;</td>
+    <td bgcolor="#aaffaa">&nbsp;&nbsp;&nbsp;&nbsp;doc.addEventListener("blur",function(){ editor._textArea.value=editor.getHTML(); },true);</td>
+</tr>
+<tr style="font:10px verdana;">
+    <td bgcolor="#cccccc">&nbsp;</td>
+    <td bgcolor="#aaffaa">} else {</td>
+</tr>
+<tr style="font:10px verdana;">
+    <td bgcolor="#cccccc">&nbsp;</td>
+    <td bgcolor="#aaffaa">&nbsp;&nbsp;&nbsp;&nbsp;editor._iframe.attachEvent("onblur",function(){ editor._textArea.value=editor.getHTML(); },true);</td>
+</tr>
+<tr style="font:10px verdana;">
+    <td>}</td>
+    <td>}</td>
+</tr>
+</table>
+<br>
+
+<br>
+<br>
+
+	
+<table border=1>
+<tr style="font:10px verdana;">
+<td>Legend:<br>
+<table border=0 cellspacing=0 cellpadding=1>
+<tr style="font:10px verdana;">
+<td align=center bgcolor="#ffaaaa">Removed from v.1.67</td>
+<td bgcolor="#cccccc">&nbsp;</td>
+</tr>
+<tr style="font:10px verdana;">
+<td align=center colspan=2 bgcolor="#ffff77">changed lines</td>
+</tr>
+<tr style="font:10px verdana;">
+<td bgcolor="#cccccc">&nbsp;</td>
+<td align=center bgcolor="#aaffaa">Added in personal version</td>
+</tr>
+</table>
+
+
+
+
+
+</body>
+</html>

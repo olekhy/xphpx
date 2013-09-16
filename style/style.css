@@ -1,0 +1,147 @@
+body { background-color: #FFFFFF; margin: 0px; padding: 0px; }
+body, p, td, div, span { font-family: tahoma, sans-serif; }
+
+a          { text-decoration: none; }
+a:link          { color: #03003C; text-decoration: none; }
+a:active  { color: #03003C; text-decoration: none; }
+a:visited { color: #03003C; text-decoration: none; }
+a:hover          { color: #F47A00; text-decoration: underline; }
+a.error:link { color: #CC0000; font-family: courier; font-weight: normal; text-decoration: none; }
+form { margin: 0px; padding: 0px; }
+
+span.off { display: none; font-weight: normal; }
+span.on  { display: inline; font-weight: normal; }
+input { border: 1px solid #666699; font-size: 80%}
+input.error { border: 1px solid #CC0000; font-size: 80%}
+SELECT { border: 1px solid #666699; font-size: 80%}
+SELECT.error { background-color: rgb(254,153,153); color:rgb(0,0,100)}
+textarea { border: 1px solid #666699;font-size: 100%}
+checkbox { border: 1px solid #666699; font-size: 80%}
+div.off        { margin: 0px; margin-left: 20px; display: none;  }
+div.on        { margin: 0px; margin-left: 20px; display: block; }
+div.closed { margin: 0px; display: none; }
+div.opened { margin: 0px; display: block; }
+
+.header { color: #FFFFFF; background-color: #000000; text-align: left; font-size: 80%; }
+td.doctitle { text-align: left; font-weight: bold; color: #FFFFFF; background-color: #000000; border-top: 1px dotted #803F04; padding:1px;}
+span.path { font-weight: normal; }
+a.doctitle { color: #FFFFFF; text-decoration: none; font-size: 100%;  font-weight: bold;}
+a:link.doctitle { color: #FFFFFF; text-decoration: none;  font-size: 100%;  font-weight: bold;}
+a:active.doctitle { color: #FFFFFF; text-decoration: none;  font-size: 100%;  font-weight: bold;}
+a:visited.doctitle { color: #FFFFFF; text-decoration: none;  font-size: 100%;  font-weight: bold;}
+a:hover.doctitle { color: #FFFFFF; text-decoration: underline; font-weight: bold;}
+
+.tb { height: 20px; font-size: 8pt; border: 1px solid #F0F0F0; background-color: #CCCCCC; }
+div.footer { clear: both; margin-top: 10px; border-top: 1px solid #CCCCCC; color: #999999; }
+td.footer { color: #999999; font-size: 80%; }
+td.authors { color: #CCCCCC; font-size: 7pt; }
+
+div.main { width: 100%; margin: 0px; }
+
+div.content { margin: 0px; padding: 10px; background: #FFFFFF; }
+
+div.sidebar { float: left; width: 20%; margin: 0px; margin-bottom: 10px; margin-right: 20px; padding: 0px;}
+
+td.sidebar { font-size: 8pt; }
+
+div.sideblock {
+        width: 100%;
+        font-size: 8pt;
+        background: #DDDDDD;
+        margin-bottom: 0px;
+}
+
+table.sidecaption {
+        background: #CCCCCC;
+}
+td.sidecaption {
+        color: #000000;
+        font-size: 7pt;
+        text-align: left;
+        padding: 2px;
+        border: 1px solid #F0F0F0;
+}
+
+div.navtree {
+        width: 100%;
+        overflow: auto;
+        scrollbar-face-color: #F8F8F8;
+        scrollbar-highlight-color: #ffffff;
+        scrollbar-shadow-color: #CCCCCC;
+        scrollbar-3dlight-color: #CCCCCC;
+        scrollbar-darkshadow-color: #FFFFff;
+        scrollbar-arrow-color: #000000;
+        scrollbar-track-color: #F8F8F8;
+        padding-bottom: 10px;
+}
+
+div.treedir { margin-left: 5px; padding-left: 20px; text-indent: -20px; }
+div.treefile { margin-left: 5px; padding-left: 20px; text-indent: -20px; }
+div.treelink { margin-left: 5px; padding-left: 20px; text-indent: -20px; }
+
+div.directory { margin: 0px; padding: 10px; border-bottom: 1px dashed #999999; font-size: 80%; }
+div.dir { margin-left: 16px; padding-left: 20px; text-indent: -20px; }
+div.annotation { font-family: times, serif; font-style: italic; font-size: 80%; margin-left: 30px; }
+
+a.doctitleSelected { color: #FFA54A; text-decoration: none; font-weight: bold;  font-size: 100%;}
+a:link.doctitleSelected { color: #FFA54A; text-decoration: none; font-weight: bold;  font-size: 100%;}
+a:active.doctitleSelected { text-decoration: none;  font-size: 100%;}
+a:visited.doctitleSelected {color: #FFA54A; text-decoration: none;  font-size: 100%;}
+a:hover.doctitleSelected { text-decoration: underline;  font-size: 100%;}
+a.dirSelected { color: #FFA54A; text-decoration: none; font-weight: bold; }
+
+a:link.dirSelected { color: #FF8000; text-decoration: none; font-weight: bold; }
+a:active.dirSelected {color: #FF8000; text-decoration: none;  }
+a:visited.dirSelected {color: #FF8000; text-decoration: none; }
+a:hover.dirSelected {color: #FF8000; text-decoration: underline; }
+
+a.dir { color: #03003C; text-decoration: none; }
+a:link.dir { color: #000099; text-decoration: none; }
+a:active.dir { text-decoration: none; }
+a:visited.dir{ text-decoration: none; }
+a:hover.dir { text-decoration: underline; }
+
+.note { cursor: default; }
+.errornote { cursor: default; color: #CC0000; font-weight: bold; }
+
+input.save {
+        border: 1px outset #CCCCCC;
+        background-color: #F8F8F8;
+        background-repeat: no-repeat;
+        background-position: 3px 3px;
+        background-image: url('save.gif');
+        padding: 3px;
+        padding-left: 23px;
+        font-size: 80%;
+
+}
+
+input.create {
+        border: 1px outset #CCCCCC;
+        background-color: #F8F8F8;
+        font-size: 80%;
+        padding: 3px;
+}
+input.newfile { vertical-align: middle; }
+input.newdir { vertical-align: middle; }
+input.basename { font-size: 80%; border: 1px inset #CCCCCC; padding: 3px; }
+
+a.button { font-size: 80%; }
+
+.xsmall { font-size: 7pt; }
+.small { font-size: 80%; }
+
+table.properties { margin-bottom: 10px; margin-top: 5px; border-collapse: collapse; }
+th.propname { background-color: #DDDDDD; text-align: right; font-size: 8pt; font-weight: bold; white-space: nowrap; padding-left: 2px; padding-right: 1px; padding-bottom: 1px; }
+td.propvalue { background-color: #DDDDDD; text-align: left; font-size: 8pt; font-weight: normal; padding-left: 1px; padding-right: 2px; padding-bottom: 1px; }
+
+input.propertyerror { background: #FFFFFF; border: 1px solid #CC0000; font-size: 8pt; }
+input.property { background: #FFFFFF; border: 1px solid #999999; font-size: 8pt;}
+input.checkproperty {  }
+textarea.property { background: #FFFFFF; border: 1px solid #999999; font-family: tahoma, sans-serif; }
+
+td.on { display: table-cell; }
+td.off { display: none; }
+
+div.signature { width: 100%; text-align: right; font-style: italic; font-size: 70%; color: #999999; font-family: verdana, sans-serif; }
+div.account { position: absolute; text-align: left; background-color: #F0F0F0; color: #000000; border: 1px outset #CCCCCC; padding: 10px; }

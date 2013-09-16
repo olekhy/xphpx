@@ -1,0 +1,22 @@
+DirectoryIndex index.php index.xml
+rewriteengine on
+rewritebase /
+rewriterule ^.+\.xml(.*)$ /index.php$1 [T=application/x-httpd-php]
+
+
+
+<Files .?*>
+        deny from all
+</Files>
+
+<Files admin.php>
+       AuthType Basic
+        AuthName "Portal login"
+        AuthUserFile <SET PATH TO YOUR FILE>.passwd
+        Require valid-user
+</Files>
+ErrorDocument 500 /index.xml
+ErrorDocument 404 /index.xml
+
+#php_value session.save_path /homepages/27/d33798103/htdocs/portal/.session
+#php_value session.save_path /tmp

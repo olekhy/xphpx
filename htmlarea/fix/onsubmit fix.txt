@@ -1,0 +1,12 @@
+How about 651 line of htmlArea.js:
+f.onsubmit = function() {
+editor._textArea.value = editor.getHTML();
+var a = this.__msh_prevOnSubmit;
+// call previous submit methods if they were there.
+if (typeof a != "undefined") {
+for (var i in a) {
+if( a() == false) return false;
+}
+}
+return true;
+}; 
